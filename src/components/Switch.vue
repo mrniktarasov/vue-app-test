@@ -1,17 +1,35 @@
 <template>
-    <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-    </label>
+    <div class='switch-wrapp'>
+        <div class='text'>{{text}}</div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
 </template>
 
 <script>
 export default {
   name: 'Switch',
+  data: function() {
+      return {
+          text: 'Переключить тему',
+      }
+  }
 }
 </script>
 
 <style scoped>
+    .switch-wrapp {
+        margin: 50px 5px 5px 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text {
+        margin-bottom: 10px;
+    }
+
     .switch {
         position: relative;
         display: inline-block;
