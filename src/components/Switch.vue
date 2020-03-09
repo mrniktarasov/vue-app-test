@@ -2,7 +2,7 @@
     <div class='switch-wrapp'>
         <div class='text'>{{text}}</div>
         <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" v-on:change='changeTheme'>
             <span class="slider round"></span>
         </label>
     </div>
@@ -13,9 +13,9 @@ export default {
   name: 'Switch',
   data: function() {
       return {
-          text: 'Переключить тему',
+          text: 'Сменить тему',
       }
-  }
+  },
 }
 </script>
 
@@ -87,5 +87,11 @@ export default {
     
     .slider.round:before {
         border-radius: 50%;
+    }
+
+    .image {
+        margin-top: 10px;
+        max-width: 50px;
+        max-height: 50px;
     }
 </style>

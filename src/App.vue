@@ -47,8 +47,8 @@ export default {
 .navigation-box {
     padding: 20px;
     border: #64004a solid 2px;
-    color: white;
     text-decoration: none;
+    color: white;
 }
 
 .navigation-box:hover {
