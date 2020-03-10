@@ -2,7 +2,9 @@
 
 ## Project setup
 ```
-npm install
+git clone https://github.com/mrniktarasov/vue-app-test
+cd vue-app-test
+npm init
 ```
 
 ### Compiles and hot-reloads for development

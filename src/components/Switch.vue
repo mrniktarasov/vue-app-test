@@ -2,7 +2,7 @@
     <div class='switch-wrapp'>
         <div class='text'>{{text}}</div>
         <label class="switch">
-            <input type="checkbox" v-on:change='changeTheme'>
+            <input type="checkbox" v-on:change='changeText'>
             <span class="slider round"></span>
         </label>
     </div>
@@ -13,9 +13,21 @@ export default {
   name: 'Switch',
   data: function() {
       return {
-          text: 'Сменить тему',
+          text: 'Сменить текст',
+          flag: false
       }
   },
+  methods: {
+    changeText: function() {
+        if(!this.flag){
+            this.text = 'Текст изменен';
+            this.flag = true;
+        }  else {
+            this.text = 'Сменить текст';
+            this.flag = false;
+        }
+    }
+  }
 }
 </script>
 
